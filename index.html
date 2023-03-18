@@ -9,18 +9,20 @@
 <body>
     <main> 
         <form method="">
-            <h1>Validador de Campos</h1>
-            <label for="nome">Email:</label>
-            <input type="text" id="emailCPF" placeholder="Escreva aqui"><br>
-            <label for="optLogin">Método de login:</label>
+            <h2>Validador de Campos</h2>
+
+            <input name='logintype' type="text" id="emailCPF" placeholder="Escreva aqui" value=""><br>
+
             <select id="optLogin" name="login">
                 <option value="CPF">CPF</option>
                 <option value="Email">Email</option>
             </select><br>
-            <button>Validar</button><br>
-            <span>Digite o valor, escolha a opção e clique em validar</span>
+
+            <button id="btn-validar">Validar</button><br>
+
+            <p>Digite o valor, escolha a opção e clique em validar</p>
         </form>
     </main>
-    <script src="/src/main.js"></script>
+    <script src="/src/main.js" type="module"></script>
 </body>
 </html>
